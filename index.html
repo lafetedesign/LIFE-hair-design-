@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/style.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
 
 </head>
 <body>
@@ -27,6 +28,14 @@
             <a class="botton" href="#contact"><span>web予約</span></a>
         </div>
         <img class="topimg" src="./images/01pc_top.png" alt="美容院の内装">
+        <div class="sp_header_container">
+            <h1 class="logo">
+                <a href="https://lafetedesign.github.io/life/">
+                    <img src="./images/logo.png" alt="Life hair design">
+                </a>
+            </h1>
+        </div>
+        <img class="sp_topimg" src="./images/sp_top.png" alt="美容院の内装">
         <nav class="header_nav">
             <ul>
                 <li>
@@ -49,7 +58,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src="./images/インスタグラム.jpg" alt="インスタグラム">
+                        <img class="instagram" src="./images/instagram.png" alt="インスタグラム">
                     </a>
                 </li>
             </ul>
@@ -76,15 +85,13 @@
                     <a href="#saloninfo">salon info</a>
                 </li>
                 <li>
-                    <a href="#contact">web予約</a>
-                </li>
-                <li>
                     <a href="">
-                        <img src="./images/インスタグラム.jpg" alt="インスタグラム">
+                        <img class="instagram" src="./images/instagram.png" alt="インスタグラム">
                     </a>
                 </li>
             </ul>
         </nav>
+        <a class="sp_botton" href="#contact"><span>web予約</span></a>
         <div class="scrolldown4"><span>Scroll</span></div>
     </header>
     <section id="concept">
@@ -100,26 +107,49 @@
     </section>
     <section id="about">
         <h2>about</h2>
-        <div class="about_block">
-            <div claee="about_textarea">
-                <div class="about_title">about</div>
-                <div class="about_owner">オーナー/スタイリスト</div>
-                <div class="owner_name"><span>デザイン太郎</span>taro design</div>
-                <p class="about_text">東京、吉祥寺・六本木のサロンにて5年間勤務。店長も務める。<br>沖縄にて7年間勤務後、2021年10月独立。<br>同年、12月21日にLIFE hair designをオープン</p>
+        <div class="pc_only">
+            <div class="about_block">
+                <div claee="about_textarea">
+                    <div class="about_title">about</div>
+                    <div class="about_owner">オーナー/スタイリスト</div>
+                    <div class="owner_name"><span>デザイン太郎</span>taro design</div>
+                    <p class="about_text">東京、吉祥寺・六本木のサロンにて5年間勤務。店長も務める。<br>沖縄にて7年間勤務後、2021年10月独立。<br>同年、12月21日にLIFE hair designをオープン</p>
+                </div>
+                <img class="owner_img" src="./images/03pc_about.png" alt="オーナーの写真">
             </div>
-            <img class="owner_img" src="./images/03pc_about.png" alt="オーナーの写真">
+            <div class="about_bg"></div>
+            <div class="salon_block">
+                <img class="salon_img" src="./images/04pc_salon.png" alt="ファミリールーム">
+                <div class="salon_textarea">
+                    <div class="salon_title">salon</div>
+                    <div class="salon_room">ファミルーム・個室完備</div>
+                    <p class="salon_text">小さなお子様連れでも安心のファミリールームを完備。
+                        お子様と一緒の空間でリラックスして施術を出来る個室となっております。また、ファミリールーム以外も安心してご利用頂けるよう、店内全て、段差のない作りにしております。</p>
+                </div>
+            </div>
+            <div class="salon_bg"></div>
         </div>
-        <div class="about_bg"></div>
-        <div class="salon_block">
-            <img class="salon_img" src="./images/04pc_salon.png" alt="ファミリールーム">
-            <div class="salon_textarea">
+        <div class="sp_only">
+            <div class="about_block">
+                <div claee="about_textarea">
+                    <div class="about_title">about</div>
+                    <img class="owner_img" src="./images/sp_about.jpg" alt="オーナーの写真">
+                    <div class="about_owner">オーナー/スタイリスト</div>
+                    <div class="owner_name"><span>デザイン太郎</span>taro design</div>
+                    <p class="about_text">東京、吉祥寺・六本木のサロンにて5年間勤務。店長も務める。<br>沖縄にて7年間勤務後、2021年10月独立。<br>同年、12月21日にLIFE hair designをオープン</p>
+                </div>
+            </div>
+            <div class="salon_block">
                 <div class="salon_title">salon</div>
-                <div class="salon_room">ファミルーム・個室完備</div>
-                <p class="salon_text">小さなお子様連れでも安心のファミリールームを完備。
-                    お子様と一緒の空間でリラックスして施術を出来る個室となっております。また、ファミリールーム以外も安心してご利用頂けるよう、店内全て、段差のない作りにしております。</p>
+                <img class="salon_img" src="./images/sp_salon.jpg" alt="ファミリールーム">
+                <div class="salon_textarea">
+                    <div class="salon_room">ファミルーム・個室完備</div>
+                    <p class="salon_text">小さなお子様連れでも安心のファミリールームを完備。
+                        お子様と一緒の空間でリラックスして施術を出来る個室となっております。また、ファミリールーム以外も安心してご利用頂けるよう、店内全て、段差のない作りにしております。</p>
+                </div>
             </div>
         </div>
-        <div class="salon_bg"></div>
+        
     </section>
     <section id="menu">
         <h2>menu</h2>
@@ -171,34 +201,38 @@
         </div>
     </section>
     <section id="style">
-        <h2>style</h2>
-        <div class="style_block">
-            <div class="style_title">style</div>
+        <div class="style_title_block">
+            <h2>style</h2>
+            <div class="style_block">
+                <div class="style_title">style</div>
+            </div>
+        </div>
+        <div class="style_slider_block">
+            <div class="slick-nav-arrows">
+                <div class="slick-prev"></div>
+                <div class="slick-next"></div>
+            </div>
             <div class="style_slider">
                 <picture>
-                    <source srcset="" media="(max-width:767px)">
+                    <source srcset="./images/sp_style01.jpg" media="(max-width:767px)">
                     <a href="images/05style_01.png" data-lightbox="slider" data-title="スタイル"><img src="./images/05style_01.png" alt="スタイル" class="sp-none"></a>
                 </picture>
                 <picture>
-                    <source srcset="" media="(max-width:767px)">
+                    <source srcset="./images/sp_style02.jpg" media="(max-width:767px)">
                     <a href="images/05style_02.png" data-lightbox="slider" data-title="スタイル"><img src="./images/05style_02.png" alt="スタイル" class="sp-none"></a>
                 </picture>
                 <picture>
-                    <source srcset="" media="(max-width:767px)">
+                    <source srcset="./images/sp_style03.jpg" media="(max-width:767px)">
                     <a href="images/05style_03.png" data-lightbox="slider" data-title="スタイル"><img src="./images/05style_03.png" alt="スタイル" class="sp-none"></a>
                 </picture>
                 <picture>
-                    <source srcset="" media="(max-width:767px)">   
+                    <source srcset="./images/sp_style04.jpg" media="(max-width:767px)">   
                     <a href="images/05style_04.jpg" data-lightbox="slider" data-title="スタイル"><img src="./images/05style_04.jpg" alt="スタイル" class="sp-none"></a>          
                 </picture>
             </div>
-            <div class="slick-nav-arrows">
-                <div class="slick-next"></div>
-                <div class="slick-prev"></div>
-            </div>
-            <div class="style_more">view more</div>
         </div>
     </section>
+    <div class="style_more">view more</div>
     <section id="saloninfo">
         <h2>salon info</h2>
         <div class="info_block">
@@ -294,7 +328,7 @@
             </li>
             <li>
                 <a href="">
-                    <img src="./images/インスタグラム.jpg" alt="インスタグラム">
+                    <img class="instagram" src="./images/instagram.png" alt="インスタグラム">
                 </a>
             </li>
             <li>
@@ -306,68 +340,46 @@
                 </div>
             </li>
         </ul>
-        <a class="pagetop" href="#header"><span>page top</span></a>
+        <div>
+            a class="pagetop" href="#header"><span>page top</span></a
+        </div>
     </footer>
 
 
     <script>
         $(function(){
-            //*スライダー*//
-            $(".style_slider").slick({
-                autoplaySpeed: 2000,
-                autoplay: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: false,
-                prevArrow: $('.slick-prev'),
-                nextArrow: $('.slick-next'),
-
-            });
             //*ハンバーガーメニュー*//
             $(".hamburger").on('click', function(){
                 $(".sp_nav").fadeToggle();
                 $(".hamburger").toggleClass('open');
             });
-            //*スタイルスライダー*//
-            if (window.matchMedia('(max-width: 767px)').matches) {
-                $(".style-slider").slick({
+             //*ギャラリースライダー*//
+             if (window.matchMedia('(max-width:787px)').matches) {
+                $(".style_slider").slick({
+             
+                    slidesToShow: 1.8,
+                    slidesToScroll: 1,
                     autoplaySpeed: 2000,
+                    speed: 2000,
                     autoplay: true,
+                    arrows:false,
+
                 });
-            } else if (window.matchMedia('(min-width:768px)').matches) {
-                $(".style-slider").slick({
+            }else if (window.matchMedia('(min-width:788px)').matches) {
+                $(".style_slider").slick({
                     infinite: true,
-                    slidesToShow: 5,
+                    slidesToShow: 3.2,
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 2000,
-                    arrows: false
+                    speed: 2000,
+                    arrows: true,
+                    prevArrow: $('.slick-prev'),
+                    nextArrow: $('.slick-next'),
                 });
-            }
+            };
         });
 
-        //*pegetopの動き*//
-        //スクロールした際の動きを関数でまとめる
-        function PageTopAnime() {
-	    var scroll = $(window).scrollTop();
-            if (scroll >= 500){//上から500pxスクロールしたら
-	        	$('.pagetop').removeClass('DownMove');//.pagetopについているDownMoveというクラス名を除く
-		        $('.pagetop').addClass('UpMove');//.pagetopについているUpMoveというクラス名を付与
-	         }else{
-		    if($('.pagetop').hasClass('UpMove')){//すでに.pagetopにUpMoveというクラス名がついていたら
-			   $('.pagetop').removeClass('UpMove');//UpMoveというクラス名を除き
-			   $('.pagetop').addClass('DownMove');//DownMoveというクラス名を.pagetopに付与
-		       }
-	       }
-        }
-        // 画面をスクロールをしたら動かしたい場合の記述
-        $(window).scroll(function () {
-	        PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
-        });
-        // ページが読み込まれたらすぐに動かしたい場合の記述
-        $(window).on('load', function () {
-	        PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
-        });
         // .pagetopをクリックした際の設定
         $('.pagetop').click(function () {
           $('body,html').animate({
@@ -376,6 +388,6 @@
           return false;//リンク自体の無効化
         });
     </script>
-    <script src="js/lightbox.min.js"></script>
+
 </body>
 </html>
