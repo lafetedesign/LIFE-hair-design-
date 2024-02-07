@@ -168,7 +168,7 @@ h2{
     margin-top: 187px;
 }
 .charm_border{
-    width: 60px;
+    width: 50px;
     border: 0.5px solid #666666;
     transform: rotate(-45deg);
     left: 10px;
@@ -316,7 +316,20 @@ h2{
     padding-bottom: 18px;
     margin-bottom: 42px;
 }
+.menu_list_last{
+    display: block;
+    max-width: 533px;
+    margin-left: 73px;
+    padding-bottom: 18px;
+    margin-bottom: 42px;
+}
 .menu_list li{
+    max-width: 533px;
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: space-between;
+}
+.menu_list_last li{
     max-width: 533px;
     display: flex;
     margin-bottom: 24px;
@@ -415,24 +428,7 @@ h2{
     content: "";
 }
 
-.style_more{
-    display: flex;
-    font-size: 20px;
-    font-family: "Abel";
-    justify-content: right;
-    margin-right: 20px;
-}
 
-.style_more:after{
-  content: '';
-  margin-top: 8px;
-  width: 35px;
-  height: 6px;
-  border-bottom: solid 1px #666666;
-  border-right: solid 1px #666666;
-  transform: skew(45deg);
-
-}
 /*.slick-list{
     position: relative;
     right: 0;
@@ -445,7 +441,7 @@ h2{
     margin-top: 108px;
 }
 #saloninfo .charm_border{
-    width: 60px;
+    width: 50px;
     border: 0.5px solid #666666;
     transform: rotate(-45deg);
     position: relative;
@@ -509,7 +505,7 @@ h2{
 .contact_box{
     width: 737px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin:70px auto;
 }
 .contact_box ul{
     display: flex;
@@ -658,6 +654,9 @@ h2{
         max-width: 600px;
         width: 100%;
     }
+    #style{
+        height: 600px;
+    }
 }
 @media screen and (max-width: 1100px){
     h2{
@@ -690,9 +689,7 @@ h2{
     .botton{
         padding: 40px 0;
     }
-    .style_more{
-        margin-top: -80px;
-    }
+
     .slick-nav-arrows{
         margin-top: 0;
     }
@@ -745,9 +742,7 @@ h2{
     .tyle_slider img{
         width: 100%;
     }
-    .style_more{
-        margin-top: -150px;
-    }
+
     .info_group{
         padding: 0px 56px;
     }
@@ -771,7 +766,7 @@ h2{
         background-color: #fff;
         height: 100vh;
     }
-    .header_container, .topimg, .botton, .header_nav, .slick-nav-arrows, .pc_only{
+    .header_container, .topimg, .botton, .header_nav, .slick-nav-arrows, .pc_only, .charm_border{
         display: none;
     }
     .sp_header_container, .sp_only{
@@ -968,7 +963,7 @@ h2{
         text-align: left;
         padding-left: 5px;
     }
-    .menu_list_cut, .menu_list{
+    .menu_list_cut, .menu_list, .menu_list_last{
         margin-top: 24px;
         margin-left: 0;
     }
@@ -982,7 +977,8 @@ h2{
         font-size: 60px;
     }
     .info_group h3{
-        margin-top: 40px;
+        margin-top: 60px;
+        margin-bottom: 27px;
     }
     .info_list, .contact_box ul{
         display: block;
@@ -999,9 +995,7 @@ h2{
     .contact_box a{
         text-align: center;
     }
-    .style_more{
-        margin-top:164px;
-    }
+
     .logo{
         margin-left: 5px;
     }
@@ -1015,17 +1009,17 @@ h2{
         margin-right: 0;
     }
     h2{
-        margin-left: 45px;
+        margin-left: 30px;
+    }
+    .lead, .about_block, .salon_block, .menu_block, .style_block, .info_block{
+        margin-left: 54px;
+    }
+    #style{
+        height: 1000px;
     }
 }
 
 
-@media screen and (max-width: 550px){
-    .style_more{
-        margin-top: 94px;
-        margin-right: 30px;
-    }
-}
 
 
 @media screen and (max-width: 500px){
@@ -1033,9 +1027,10 @@ h2{
         font-size: 55px;
         margin-top: -35px;
     }
-    .style_more{
-        margin-top: 40px;
+    #style{
+        height: 760px;
     }
+
 }
 
 @media screen and (max-width: 430px){
@@ -1052,9 +1047,7 @@ h2{
     .lead_main{
         font-size: 24px;
     }
-    .lead, .about_block, .salon_block, .menu_block, .style_block, .info_block{
-        margin-left: 62px;
-    }
+
     .menu_title{
         margin-bottom: 43px;
     }
@@ -1064,16 +1057,14 @@ h2{
     .menutext{
         font-size: 13px;
     }
-    .style_more{
-        margin-top: -68px;
+    #style{
+        height: 650px;
     }
+
 }
 @media screen and (max-width: 400px){
     h2{
         margin-left: 24px;
-    }
-    .style_more{
-        margin-top: -283px;
     }
     .contact_box li{
         width: 160px;
@@ -1111,5 +1102,8 @@ h2{
     }
     .footer_menu{
         margin-top: 100px;
+    }
+    #style{
+        height: 550px;
     }
 }
